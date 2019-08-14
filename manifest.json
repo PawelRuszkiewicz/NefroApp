@@ -5,8 +5,8 @@
   "background_color": "#15a9c9",
   "display": "browser",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/NefroApp/",
+  "start_url": "/NefroApp/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
