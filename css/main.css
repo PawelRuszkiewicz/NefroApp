@@ -311,12 +311,37 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
   color: #F9C802;
-  background: #3b93f2; }
+  background: #3b93f2;
+  width: 100%;
+  height: 100%; }
+
+.cont {
+  background-color: #278cda;
+  height: 812px;
+  width: 375px;
+  margin: auto auto;
+  padding: 20px 20px; }
+  .cont__header {
+    text-align: center;
+    padding: 30px 10px; }
+  .cont__header--h1 {
+    margin: 0;
+    padding: 10rem auto; }
+  .cont__glass {
+    text-align: center; }
+
+.svg__glass {
+  width: 280px;
+  height: 280px;
+  padding: auto auto;
+  fill: none; }
 
 /*# sourceMappingURL=main.css.map */
