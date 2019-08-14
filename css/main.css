@@ -343,5 +343,9 @@ body {
   height: 280px;
   padding: auto auto;
   fill: none; }
+  .svg__glass--water {
+    fill: #2196F3; }
+  .svg__glass--glass {
+    fill: #ECEFF1; }
 
 /*# sourceMappingURL=main.css.map */
