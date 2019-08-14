@@ -22,29 +22,8 @@ body {
   height: 812px;
   width: 375px;
   margin: auto auto;
-  padding: 20px 20px;
-  &__header{
-  text-align: center;
-  padding: 30px 10px;
-  }
-  &__header--h1{
+  &__h1{
     margin: 0;
     padding: 10rem auto;
-  }
-  &__glass{
-    // cz glowna z szklanką w vsg
-text-align: center;
-  }
-}
-.svg__glass {
-  width: 280px;
-  height: 280px;
-  padding: auto auto;
-  fill: none;
-  &--water{
-
-  }
-  &--glass{
-
   }
 }
