@@ -309,7 +309,8 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
 
 *,
 *:before,
@@ -325,13 +326,13 @@ body {
 
 .cont {
   background-color: #4789eb;
-  height: 812px;
-  width: 375px;
+  height: 100%;
+  width: 320px;
   margin: auto auto;
   padding: 20px 20px; }
   .cont__header {
     text-align: center;
-    padding: 30px 10px; }
+    padding: 30px 10px 10px; }
   .cont__header--h1 {
     margin: 0;
     padding: 10rem auto; }
@@ -342,7 +343,6 @@ body {
   width: 280px;
   height: 280px;
   padding: auto auto;
-  margin-top: 3rem;
   margin-bottom: 2rem;
   fill: none; }
   .svg__glass--water {
@@ -352,7 +352,7 @@ body {
 
 .btnCont {
   width: 100%;
-  border: 20 auto 0;
+  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,7 +365,7 @@ body {
     height: 35px;
     border: 1px solid #ECEFF1;
     border-radius: 5px;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     -webkit-box-shadow: 3px 3px 5px;
             box-shadow: 3px 3px 5px; }
   .btnCont__subtractGlass {
@@ -373,8 +373,36 @@ body {
     height: 35px;
     border: 1px solid #ECEFF1;
     border-radius: 5px;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     -webkit-box-shadow: 3px 3px 5px;
-            box-shadow: 3px 3px 5px; }
+            box-shadow: 3px 3px 5px;
+    border-bottom: 10px; }
+
+.foter {
+  min-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.svg {
+  height: 45px;
+  width: 45px; }
+
+.Capa_1 {
+  height: 45px;
+  width: 45px;
+  overflow: hidden; }
+
+.tols {
+  fill: white;
+  width: 32px;
+  height: 32px; }
 
 /*# sourceMappingURL=main.css.map */
