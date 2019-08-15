@@ -405,4 +405,12 @@ body {
   width: 32px;
   height: 32px; }
 
+.counter {
+  position: absolute;
+  top: 230px;
+  left: 167px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ECEFF1; }
+
 /*# sourceMappingURL=main.css.map */
