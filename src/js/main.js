@@ -19,6 +19,7 @@ if ('serviceWorker' in navigator) {
 
 const addG =  document.querySelector('.addGlass--js');
 const subG = document.querySelector('.subtractGlass--js');
+const counter = document.querySelector('.counter--js');
 const keyLs = new Date().toISOString().slice(0, 10);
 
 
