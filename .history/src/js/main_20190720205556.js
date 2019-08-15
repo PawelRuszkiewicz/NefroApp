@@ -17,8 +17,6 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-const addG =  document.querySelector('.addGlass--js');
-const subG = document.querySelector('.subtractGlass--js');
-const keyLs = new Date().toISOString().slice(0, 10);
+console.log(`Hello world!`);
 
 
