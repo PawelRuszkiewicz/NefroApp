@@ -10,6 +10,6 @@ $glass: #ECEFF1;
   border-radius: 5px;
   margin: 20px auto 0;
 }
-@mixin btnShadow {
+@mixin btnShadow; {
     box-shadow:3px 3px 5px;
 }

@@ -40,10 +40,7 @@ text-align: center;
   width: 280px;
   height: 280px;
   padding: auto auto;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
   fill: none;
-
   &--water{
     fill: $waterInGlass;
   }
@@ -53,19 +50,25 @@ text-align: center;
   }
 }
 .btnCont{
-
-width: 100%;
-border: 20 auto 0;
+height: 100px;
+width: 400px;
+margin: 50px auto;
 display: flex;
 flex-direction: column;
 
-
 &__addGlass{
-  @include btnStyle;
-  @include btnShadow;
+  width: 150px;
+  height: 80px;
+  border: 1px solid  $glass;
+  border-radius: 10px;
+margin: 20px auto;
 }
 &__subtractGlass{
-  @include btnStyle;
-  @include btnShadow;
+  width: 150px;
+  height: 80px;
+  border: 1px solid  $glass;
+  border-radius: 10px;
+  margin: 20px auto;
+
 }
 }

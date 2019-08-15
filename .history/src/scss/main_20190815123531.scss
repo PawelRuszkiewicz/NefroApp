@@ -62,10 +62,9 @@ flex-direction: column;
 
 &__addGlass{
   @include btnStyle;
-  @include btnShadow;
 }
 &__subtractGlass{
   @include btnStyle;
-  @include btnShadow;
+
 }
 }

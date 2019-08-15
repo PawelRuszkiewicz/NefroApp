@@ -1,15 +1,12 @@
 $violet: rgb(59, 147, 242);
 $yellow: #F9C802;
-$bcolor: rgb(71, 137, 235);
+$bcolor: rgb(39, 140, 218);
 $waterInGlass: #2196F3;
 $glass: #ECEFF1;
 @mixin btnStyle {
-    width: 170px;
-  height: 35px;
+    width: 150px;
+  // height: 100px;
   border: 1px solid  $glass;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 20px auto 0;
-}
-@mixin btnShadow {
-    box-shadow:3px 3px 5px;
 }
