@@ -55,7 +55,7 @@ body {
 .btnCont {
   width: 100%;
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 
@@ -80,9 +80,8 @@ body {
   width: 45px;
 }
 .Capa_1{
-  height: 45px;
-  width: 45px;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 .tols {
   fill: white;

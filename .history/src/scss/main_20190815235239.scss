@@ -1,9 +1,10 @@
 @import "_normalize";
 @import "_variables";
 
+
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -55,7 +56,7 @@ body {
 .btnCont {
   width: 100%;
 
-  margin-bottom: 15px;
+  // border: 20px auto 0;
   display: flex;
   flex-direction: column;
 
@@ -69,23 +70,15 @@ body {
     border-bottom: 10px;
   }
 }
-.foter {
+.foter{
   min-height: 45px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 }
-.svg{
-  height: 45px;
-  width: 45px;
-}
-.Capa_1{
-  height: 45px;
-  width: 45px;
-  overflow: hidden;
-}
-.tols {
-  fill: white;
-  width: 32px;
-  height: 32px;
+.tols{
+  color: white;
+  background: white;
+  width:32px;
+ height:32px;
+
+  enable-background: new -1.602 0.071 32 32 ;
+
 }

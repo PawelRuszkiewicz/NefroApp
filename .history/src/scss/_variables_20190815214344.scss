@@ -5,10 +5,10 @@ $waterInGlass: #2196F3;
 $glass: #ECEFF1;
 @mixin btnStyle {
     width: 170px;
-  height: 35px;
+  height: 15px;
   border: 1px solid  $glass;
   border-radius: 5px;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
 }
 @mixin btnShadow {
     box-shadow:3px 3px 5px;

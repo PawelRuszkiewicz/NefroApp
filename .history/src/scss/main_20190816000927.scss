@@ -55,7 +55,7 @@ body {
 .btnCont {
   width: 100%;
 
-  margin-bottom: 15px;
+  // border: 20px auto 0;
   display: flex;
   flex-direction: column;
 
@@ -76,13 +76,11 @@ body {
   flex-direction: row;
 }
 .svg{
-  height: 45px;
-  width: 45px;
+  height: 45px;;
 }
 .Capa_1{
   height: 45px;
   width: 45px;
-  overflow: hidden;
 }
 .tols {
   fill: white;

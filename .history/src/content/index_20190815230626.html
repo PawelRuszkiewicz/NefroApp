@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Aplikacja PWA do kontroli ilości wypitej dziennie wody" />
+  <meta name="keywords" content="woda, nefrologia, nerki, nawadnianie," />
+  <meta property="og:title" content="NefroApp" />
+  <meta property="og:description"
+    content="Aplikacja na telefon, licząca wypite dziennie szklanki wody, szczególnie polecana dla soób z chorymi nerkami." />
+  <meta property="og:url" content="https://pawelruszkiewicz.github.io/NefroApp/" />
+  <meta property="og:image"
+    content="https://github.com/PawelRuszkiewicz/NefroApp/blob/master/src/assets/img/coverOp.png" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="cont">
+    <div class="cont__header">
+      <h1 class="cont__header--h1">NefroApp</h1>
+    </div>
+    <div class="cont__glass">
+      <svg class="svg__glass">
+        <path class="svg__glass--glass"
+          d="M242.748 2.8875C241.085 1.05 238.74 0 236.255 0H43.7555C41.288 0 38.9255 1.05 37.263 2.8875C35.618 4.7075 34.7955 7.1575 35.0405 9.625L61.2905 272.125C61.7455 276.605 65.508 280 70.0055 280H210.005C214.503 280 218.265 276.605 218.703 272.125L244.953 9.625C245.215 7.1575 244.41 4.7075 242.748 2.8875Z" />
+        <path class="svg__glass--water"
+          d="M219.455 89.25L202.13 262.5H77.8805L58.4555 68.775C80.3305 61.775 113.58 57.05 140.005 78.75C165.555 99.75 197.755 95.9 219.455 89.25Z" />
+      </svg>
+    </div>
+    <div class="btnCont">
+      <button class="btnCont__addGlass">Dodaj szklankę</button>
+      <button class="btnCont__subtractGlass">Usuń szklankę</button>
+    </div>
+<div class="foter">
+<a href="#"> <img src="/src/assets/img/007.png" alt="menu aplikacji">
+
+</a>
+<a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  width="32px" height="30.146px"  xml:space="preserve">
+<path d="M0.265,23.555c-0.387,0.211-0.316,5.901,0,6.323s6.009,0.281,6.325,0c0.316-0.279,0.246-5.901,0-6.323
+ C6.344,23.133,0.651,23.344,0.265,23.555z"/>
+<path d="M8.698,15.292c-0.316,0.287-0.316,13.8,0,14.375c0.316,0.576,6.009,0.288,6.326,0c0.316-0.287,0.246-13.896,0-14.375
+ C14.778,14.813,9.015,15.004,8.698,15.292z"/>
+<path d="M17.132,5.537c-0.315,0.461-0.315,23.645,0,24.219c0.316,0.577,5.938,0.462,6.325,0c0.387-0.461,0.176-23.643,0-24.219
+ S17.449,5.075,17.132,5.537z"/>
+<path class="cappa" d="M31.893,0.211c-0.142-0.229-5.938-0.327-6.326,0c-0.387,0.328-0.256,29.067,0,29.533c0.254,0.465,6.177,0.191,6.326,0
+ C32.041,29.552,32.032,0.444,31.893,0.211z"/>
+</svg></a>
+</div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

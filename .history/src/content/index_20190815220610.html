@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Aplikacja PWA do kontroli ilości wypitej dziennie wody" />
+  <meta name="keywords" content="woda, nefrologia, nerki, nawadnianie," />
+  <meta property="og:title" content="NefroApp" />
+  <meta property="og:description"
+    content="Aplikacja na telefon, licząca wypite dziennie szklanki wody, szczególnie polecana dla soób z chorymi nerkami." />
+  <meta property="og:url" content="https://pawelruszkiewicz.github.io/NefroApp/" />
+  <meta property="og:image"
+    content="https://github.com/PawelRuszkiewicz/NefroApp/blob/master/src/assets/img/coverOp.png" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="cont">
+    <div class="cont__header">
+      <h1 class="cont__header--h1">NefroApp</h1>
+    </div>
+    <div class="cont__glass">
+      <svg class="svg__glass">
+        <path class="svg__glass--glass"
+          d="M242.748 2.8875C241.085 1.05 238.74 0 236.255 0H43.7555C41.288 0 38.9255 1.05 37.263 2.8875C35.618 4.7075 34.7955 7.1575 35.0405 9.625L61.2905 272.125C61.7455 276.605 65.508 280 70.0055 280H210.005C214.503 280 218.265 276.605 218.703 272.125L244.953 9.625C245.215 7.1575 244.41 4.7075 242.748 2.8875Z" />
+        <path class="svg__glass--water"
+          d="M219.455 89.25L202.13 262.5H77.8805L58.4555 68.775C80.3305 61.775 113.58 57.05 140.005 78.75C165.555 99.75 197.755 95.9 219.455 89.25Z" />
+      </svg>
+    </div>
+    <div class="btnCont">
+      <button class="btnCont__addGlass">Dodaj szklankę</button>
+      <button class="btnCont__subtractGlass">Usuń szklankę</button>
+    </div>
+<div class="foter">
+<a href="#"><glyph glyph-name="cog" unicode="&#xe800;" d="M1000 421v-142l-185-26q-10-27-21-50l120-157-102-100-159 118q-20-10-51-21l-30-194h-143l-27 197q-21 7-43 18l-161-119-101 100 121 160q-11 21-19 46l-199 28v142l199 28q7 21 19 45l-120 159 101 100 160-119q15 8 47 20l28 195h143l28-195q22-7 48-19l158 117 102-100-119-156q13-27 20-48z m-348-72q0 60-43 102t-103 42-102-42-43-102 43-102 102-42 103 42 43 102z" horiz-adv-x="1000" />
+</a>
+<a href="#"><glyph glyph-name="signal" unicode="&#xe801;" d="M222-150h-222v333h222v-333z m371 0h-223v667h223v-667z m148 0v1000h222v-1000h-222z" horiz-adv-x="963" /></a>
+</div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
