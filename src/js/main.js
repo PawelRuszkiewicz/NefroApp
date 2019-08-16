@@ -23,29 +23,26 @@ const keyLs = new Date().toISOString().slice(0, 10);  // get strimg with date in
 let counterValue;
 const actualizeLs = () => { localStorage.setItem(keyLs, counterValue); counter.innerHTML = counterValue; }
 
-//check if key with date are existing and have any value, if yes add in to counterValue, if no  set  key and valu 0 and set in to counterValue.
+//check if key with date are existing and have any value, if yes add in to counterValue, if no  set  key and value 0 and set in to counterValue.
 const counterCheck = () => {
-if (localStorage.getItem(keyLs)){
-  counterValue=localStorage.getItem(keyLs);
-  console.log(`jest klucz i ma wartosć : ${counterValue}`);
-}
-else{
-  localStorage.setItem(keyLs, 0);
-  counterValue=localStorage.getItem(keyLs);
-  console.log(`brak klucza- zakładam i przypisuje wartość ${counterValue}`)
-}
+  if (localStorage.getItem(keyLs)) {
+    counterValue = parseInt(localStorage.getItem(keyLs), 10);
+    counter.innerHTML = counterValue;
+    console.log(`jest klucz i ma wartosć : ${counterValue}`);
+  }
+  else {
+    localStorage.setItem(keyLs, 0);
+    counterValue = parseInt(localStorage.getItem(keyLs), 10);
+    counter.innerHTML = counterValue;
+    console.log(`brak klucza- zakładam i przypisuje wartość ${counterValue}`)
+  }
 };
-// let counterValue = 0; // counterCheck();
 counterCheck();
-counter.innerHTML = counterValue;
-
 
 addG.addEventListener('click', (e) => {
-
-
-if (counterValue >= 50) {
-  counter.innerHTML = "🐳";
-}
+  if (counterValue >= 50) {
+    counter.innerHTML = "🐳";
+  }
   else { counterValue += 1; actualizeLs(); }
 })
 
@@ -53,6 +50,5 @@ subG.addEventListener('click', (e) => {
   if (counterValue == 0) {
     counterValue = 0; actualizeLs();
   }
-
   else { counterValue -= 1; actualizeLs(); }
 })
