@@ -19,44 +19,40 @@ if ('serviceWorker' in navigator) {
 const addG = document.querySelector('.addGlass--js');
 const subG = document.querySelector('.subtractGlass--js');
 const counter = document.querySelector('.counter--js');
-const keyLs = new Date().toISOString().slice(0, 10);  // get strimg witch date in format RRRR-MM-DD
+const keyLs = new Date().toISOString().slice(0, 10);  // get strimg with date in format RRRR-MM-DD
+let counterValue;
+const actualizeLs = () => { localStorage.setItem(keyLs, counterValue); counter.innerHTML = counterValue; }
 
-
+//check if key with date are existing and have any value, if yes add in to counterValue, if no  set  key and valu 0 and set in to counterValue.
 const counterCheck = () => {
-  return "T";
+if (localStorage.getItem(keyLs)){
+  counterValue=localStorage.getItem(keyLs);
+  console.log(`jest klucz i ma wartosć : ${counterValue}`);
+}
+else{
+  localStorage.setItem(keyLs, 0);
+  counterValue=localStorage.getItem(keyLs);
+  console.log(`brak klucza- zakładam i przypisuje wartość ${counterValue}`)
+}
 };
 // let counterValue = 0; // counterCheck();
-// counter.innerHTML = counterValue;
+counterCheck();
+counter.innerHTML = counterValue;
 
 
 addG.addEventListener('click', (e) => {
 
-  if (counterValue >= 50) {
-    counter.innerHTML = ":)";
-    console.log('wypiłeś 10 l. wody. Jesteś koniem?');
-    }
-  else {
-    counterValue += 1;
-    console.log(counterValue);
-    localStorage.setItem(keyLs, counterValue);
-    counter.innerHTML = counterValue;
-    console.log(counterValue);
-    }
-  }
-)
+
+if (counterValue >= 50) {
+  counter.innerHTML = "🐳";
+}
+  else { counterValue += 1; actualizeLs(); }
+})
 
 subG.addEventListener('click', (e) => {
-
   if (counterValue == 0) {
-    counterValue = 0;
-    console.log(counterValue);
-    localStorage.setItem(keyLs, counterValue)
-    counter.innerHTML = counterValue;
-  } else {
-    counterValue -= 1;
-    console.log(counterValue)
-    localStorage.setItem(keyLs, counterValue);
-    counter.innerHTML = counterValue;
+    counterValue = 0; actualizeLs();
   }
-}
-)
+
+  else { counterValue -= 1; actualizeLs(); }
+})

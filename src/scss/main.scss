@@ -102,4 +102,12 @@ body {
   font-size: 5rem;
   font-weight: bold;
   color: $glass;
+  &--change{
+    position: absolute;
+  top: 130px;
+  left: 95px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: $glass;
+  }
 }
