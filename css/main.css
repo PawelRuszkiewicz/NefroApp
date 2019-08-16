@@ -413,5 +413,12 @@ body {
   font-size: 5rem;
   font-weight: bold;
   color: #ECEFF1; }
+  .counter--change {
+    position: absolute;
+    top: 130px;
+    left: 95px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ECEFF1; }
 
 /*# sourceMappingURL=main.css.map */
