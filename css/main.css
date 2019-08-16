@@ -337,7 +337,8 @@ body {
     margin: 0;
     padding: 10rem auto; }
   .cont__glass {
-    text-align: center; }
+    text-align: center;
+    position: relative; }
 
 .svg__glass {
   width: 280px;
@@ -407,8 +408,8 @@ body {
 
 .counter {
   position: absolute;
-  top: 230px;
-  left: 167px;
+  top: 130px;
+  left: 120px;
   font-size: 5rem;
   font-weight: bold;
   color: #ECEFF1; }
