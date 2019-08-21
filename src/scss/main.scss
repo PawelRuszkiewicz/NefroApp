@@ -111,3 +111,22 @@ body {
   color: $glass;
   }
 }
+.counter-wrap {
+  touch-action: manipulation;
+  width: 280px;
+  height: 280px;
+  background-size: contain;
+  display: flex;
+  align-items: center; //środkowanie licznika
+  justify-content: center;
+  color: #000;
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+
+  &__counter {
+     display: block;
+     padding-top: 64px;
+  }
+}
