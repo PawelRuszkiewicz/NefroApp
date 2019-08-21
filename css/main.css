@@ -409,7 +409,7 @@ body {
 .counter {
   position: absolute;
   top: 130px;
-  left: 120px;
+  left: 110px;
   font-size: 5rem;
   font-weight: bold;
   color: #ECEFF1; }
@@ -420,5 +420,29 @@ body {
     font-size: 5rem;
     font-weight: bold;
     color: #ECEFF1; }
+
+.counter-wrap {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  width: 280px;
+  height: 280px;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0px; }
+  .counter-wrap__counter {
+    display: block;
+    padding-top: 64px; }
 
 /*# sourceMappingURL=main.css.map */
